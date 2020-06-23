@@ -2,8 +2,8 @@ const mongoose  = require('mongoose')
 const Schema = mongoose.Schema;
 
 const UrlSchema =  new Schema({
-    urlData: String
-    // date: Date
+    urlData: String,
+     created_at: Date,
+    urlShorten:String
 });
-
-module.exports = mongoose.model('url',UrlSchema, 'url')
+module.exports = mongoose.model('URL',UrlSchema,'url')
